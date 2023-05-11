@@ -64,6 +64,7 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\main\controller\LoadSceneCommand.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\ClickDetector.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ContextStartupFlags.cs" />
+    <Compile Include="Assets\Scripts\Model\ScoreModel.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\ShipView.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\controller\StartCommand.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjectorFactory.cs" />
@@ -71,7 +72,9 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\service\FacebookService.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ContextKeys.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\Context.cs" />
+    <Compile Include="Assets\Scripts\View\CubeMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\startupSequence\StartGameCommand.cs" />
+    <Compile Include="Assets\Scripts\Command\RequestScoreCommand.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\IBinder.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\Command.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\StartCommand.cs" />
@@ -93,6 +96,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\signal\impl\BaseSignal.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\ReplayGameCommand.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\service\IExampleService.cs" />
+    <Compile Include="Assets\Scripts\View\Demo1MediatorEvent.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\MediationException.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\signal\CallWebServiceSignal.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\SequencerException.cs" />
@@ -128,6 +132,8 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\IMediationBinding.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\impl\InjectionException.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\AwardView.cs" />
+    <Compile Include="Assets\Scripts\Service\ScoreService.cs" />
+    <Compile Include="Assets\Scripts\Command\Demo1CommandEvent.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\SocialEvent.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\MediationEvent.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\api\IDispatcher.cs" />
@@ -142,6 +148,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\impl\TmEvent.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\View.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\Mediator.cs" />
+    <Compile Include="Assets\Scripts\Service\IScoreService.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\GameRoot.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\ICommandBinder.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjectionBinding.cs" />
@@ -155,6 +162,8 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\Sequencer.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\InjectAttribute.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\api\EventDispatcherExceptionType.cs" />
+    <Compile Include="Assets\Scripts\View\CubeView.cs" />
+    <Compile Include="Assets\Scripts\Service\Demo1ServiceEvent.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\impl\CrossContextInjectionBinder.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\EventMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\EnemyView.cs" />
@@ -242,9 +251,6 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ClickDetector.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ICrossContextCapable.cs" />
-    <Compile Include="Assets\Scripts\Model\ScoreModel.cs" />
-    <Compile Include="Assets\Scripts\Service\IScoreService.cs" />
-    <Compile Include="Assets\Scripts\Service\ScoreService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

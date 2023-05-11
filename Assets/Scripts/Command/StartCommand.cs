@@ -12,6 +12,5 @@ public class StartCommand : Command
     public override void Execute()
     {
         Debug.Log("start command execute");
-        Console.WriteLine("aa");
     }
 }

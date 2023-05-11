@@ -1,3 +1,4 @@
+using strange.extensions.dispatcher.eventdispatcher.api;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +7,10 @@ using Random = UnityEngine.Random;
 
 public class ScoreService : IScoreService
 {
-    public void ScoreRequest(string url)
+    [Inject]
+    public IEventDispatcher dispatcher { get;set; }
+
+    public void RequestScore(string url)
     {
         Debug.Log("this is ScoreRequest from url"+ url);
         OnServiceScore();
@@ -15,7 +19,8 @@ public class ScoreService : IScoreService
     public void OnServiceScore()
     {
         int score = Random.Range(0, 100);
-        Console.WriteLine("On Service Score");
+        dispatcher.Dispatch(Demo1ServiceEvent.RequestScore,score);
+        Debug.Log("On Service Score");
     }
 
     public void UpdateScore(string url,int score)
