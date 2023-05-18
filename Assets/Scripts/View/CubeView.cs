@@ -1,7 +1,10 @@
 using JetBrains.Annotations;
+using strange.extensions.dispatcher.api;
+using strange.extensions.dispatcher.eventdispatcher.api;
 using strange.extensions.mediation.impl;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +12,8 @@ using UnityEngine.UI;
 public class CubeView : View
 {
     private TextMeshPro scoreText;
+    [Inject]
+    public IEventDispatcher dispatcher { get; set; }
     /// <summary>
     /// ≥ı ºªØ
     /// </summary>
@@ -24,7 +29,7 @@ public class CubeView : View
 
     private void OnMouseDown()
     {
-        Debug.Log("On Mouse Down");
+        dispatcher.Dispatch(Demo1MediatorEvent.ClickDown);
     }
 
     public void UpdateScore(int score)

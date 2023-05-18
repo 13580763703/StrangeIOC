@@ -16,6 +16,7 @@ public class CubeMediator : Mediator
         cubeview.Init();
         Debug.Log(cubeview);
         dispatcher.AddListener(Demo1MediatorEvent.ScoreChange, OnScoreChange);
+        cubeview.dispatcher.AddListener(Demo1MediatorEvent.ClickDown, OnScoreUpdate);
         Debug.Log("ihaverunning");
 
         dispatcher.Dispatch(Demo1CommandEvent.RequestScore);//发起请求分数的命令
@@ -26,10 +27,16 @@ public class CubeMediator : Mediator
     public override void OnRemove()
     {
         dispatcher.RemoveListener(Demo1MediatorEvent.ScoreChange,OnScoreChange);
+        cubeview.dispatcher.RemoveListener(Demo1MediatorEvent.ClickDown, OnScoreUpdate);
     }
     
     public void OnScoreChange(IEvent evt)
     {
         cubeview.UpdateScore((int)evt.data);
+    }
+
+    public void OnScoreUpdate()
+    {
+        dispatcher.Dispatch(Demo1CommandEvent.UpdateScore);
     }
 }

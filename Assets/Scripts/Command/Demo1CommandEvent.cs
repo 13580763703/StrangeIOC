@@ -5,5 +5,6 @@ using UnityEngine;
 
 public enum Demo1CommandEvent
 {
-    RequestScore
+    RequestScore,
+    UpdateScore
 }

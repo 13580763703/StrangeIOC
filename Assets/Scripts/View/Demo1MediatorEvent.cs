@@ -4,5 +4,6 @@ using UnityEngine;
 
 public enum Demo1MediatorEvent
 {
-    ScoreChange   
+    ScoreChange,
+    ClickDown
 }

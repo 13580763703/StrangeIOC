@@ -120,6 +120,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\EventCommand.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\signal\api\IBaseSignal.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\SequenceCommand.cs" />
+    <Compile Include="Assets\Scripts\Command\UpdateScoreCommand.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\startupSequence\StartAppCommand.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\model\IExampleModel.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\ICrossContextInjectionBinder.cs" />

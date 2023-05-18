@@ -19,6 +19,7 @@ public class Demo1Context : MVCSContext
         injectionBinder.Bind<IScoreService>().To<ScoreService>().ToSingleton();
         //command
         commandBinder.Bind(Demo1CommandEvent.RequestScore).To<RequestScoreCommand>();
+        commandBinder.Bind(Demo1CommandEvent.UpdateScore).To<UpdateScoreCommand>();
         //mediator
         mediationBinder.Bind<CubeView>().To<CubeMediator>();
         // 绑定开始事件创建一个startcommand
