@@ -272,6 +272,7 @@
     <None Include="Assets\StrangeIoC\scripts\strange\extensions\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Framework\Resources\audiolist.txt" />
     <None Include="Assets\StrangeIoC\LICENSE-2.0.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\ReadMe.txt" />
