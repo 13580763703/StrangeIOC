@@ -18,11 +18,22 @@ public class AudioWindowEditor : EditorWindow
         AudioWindowEditor window = EditorWindow.GetWindow<AudioWindowEditor>("音效管理");
         window.Show();
     }
+
     private string audioName;
     private string audioPath;
-    Dictionary<string, string> audioDict = new Dictionary<string, string>();
+    private Dictionary<string, string> audioDict = new Dictionary<string, string>();
+    private string savePath;
 
-    
+    private void OnEnable()
+    {
+        savePath = Application.dataPath + "/Framework/Resources/audiolist.txt";
+    }
+    void Awake()
+    {
+        OnEnable();
+        LoadAudioList();
+    }
+
     void OnGUI()
     {
         //EditorGUILayout.TextField("文字1", text);
@@ -42,6 +53,7 @@ public class AudioWindowEditor : EditorWindow
             if (GUILayout.Button("delete"))
             {
                 audioDict.Remove(key);
+                SaveAudioList();
                 return;
             }
             GUILayout.EndHorizontal();
@@ -71,6 +83,15 @@ public class AudioWindowEditor : EditorWindow
             }
         }
     }
+
+    //private string savePath = Application.dataPath + "\\Framework\\Resources\\audiolist.txt";
+
+    private void OnInspectorUpdate()
+    {
+        Debug.Log("Update");
+        LoadAudioList();
+    }
+
     private void SaveAudioList()
     {
         StringBuilder sb = new StringBuilder(); 
@@ -81,9 +102,21 @@ public class AudioWindowEditor : EditorWindow
             sb.Append(key + "," + value + "\n");
         }
         //File.WriteAllText(AudioManager.AudioTextPath, sb.ToString());
-        string savePath = Application.dataPath + "\\Framework\\Resources\\audiolist.txt";
+        Debug.Log(savePath);
         File.WriteAllText(savePath, sb.ToString());
     }
-
+    private void LoadAudioList()
+    {
+        Debug.Log(savePath);
+        audioDict = new Dictionary<string, string>();
+        if(File.Exists(savePath) == false) return;
+        string[] lines = File.ReadAllLines(savePath);
+        foreach(string line in lines)
+        {
+            if(string.IsNullOrEmpty(line)) continue;
+            string[] keyValue = line.Split(','); 
+            audioDict.Add(keyValue[0], keyValue[1]);    
+        }
+    }
     
 }
