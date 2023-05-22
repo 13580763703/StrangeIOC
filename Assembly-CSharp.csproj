@@ -252,6 +252,7 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ClickDetector.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ICrossContextCapable.cs" />
+    <Compile Include="Assets\Framework\Manager\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

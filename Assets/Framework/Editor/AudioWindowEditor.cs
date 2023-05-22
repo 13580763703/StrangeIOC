@@ -22,15 +22,15 @@ public class AudioWindowEditor : EditorWindow
     private string audioName;
     private string audioPath;
     private Dictionary<string, string> audioDict = new Dictionary<string, string>();
-    private string savePath;
+    //private string savePath;
 
-    private void OnEnable()
-    {
-        savePath = Application.dataPath + "/Framework/Resources/audiolist.txt";
-    }
+    //private void OnEnable()
+    //{
+    //    savePath = Application.dataPath + "/Framework/Resources/audiolist.txt";
+    //}
     void Awake()
     {
-        OnEnable();
+        //OnEnable();
         LoadAudioList();
     }
 
@@ -102,15 +102,15 @@ public class AudioWindowEditor : EditorWindow
             sb.Append(key + "," + value + "\n");
         }
         //File.WriteAllText(AudioManager.AudioTextPath, sb.ToString());
-        Debug.Log(savePath);
-        File.WriteAllText(savePath, sb.ToString());
+        Debug.Log(AudioManager.AudioTextPath);
+        File.WriteAllText(AudioManager.AudioTextPath, sb.ToString());
     }
     private void LoadAudioList()
     {
-        Debug.Log(savePath);
+        Debug.Log(AudioManager.AudioTextPath);
         audioDict = new Dictionary<string, string>();
-        if(File.Exists(savePath) == false) return;
-        string[] lines = File.ReadAllLines(savePath);
+        if(File.Exists(AudioManager.AudioTextPath) == false) return;
+        string[] lines = File.ReadAllLines(AudioManager.AudioTextPath);
         foreach(string line in lines)
         {
             if(string.IsNullOrEmpty(line)) continue;

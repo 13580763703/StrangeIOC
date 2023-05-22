@@ -13,6 +13,8 @@ public class Demo1Context : MVCSContext
 
     protected override void mapBindings()
     {
+        //manager
+        injectionBinder.Bind<AudioManager>().To<AudioManager>().ToSingleton(); 
         //model
         injectionBinder.Bind<ScoreModel>().To<ScoreModel>().ToSingleton();
         //service
