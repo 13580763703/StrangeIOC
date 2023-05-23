@@ -12,7 +12,7 @@ public class ScoreService : IScoreService
 
     public void RequestScore(string url)
     {
-        Debug.Log("this is ScoreRequest from url"+ url);
+        //Debug.Log("this is ScoreRequest from url"+ url);
         OnServiceScore();
     }
 
@@ -20,7 +20,7 @@ public class ScoreService : IScoreService
     {
         int score = Random.Range(0, 100);
         dispatcher.Dispatch(Demo1ServiceEvent.RequestScore,score);
-        Debug.Log("On Service Score");
+        //Debug.Log("On Service Score");
     }
 
     public void UpdateScore(string url,int score)

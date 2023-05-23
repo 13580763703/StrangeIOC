@@ -14,12 +14,15 @@ public class CubeView : View
     private TextMeshPro scoreText;
     [Inject]
     public IEventDispatcher dispatcher { get; set; }
+    [Inject]
+    public AudioManager audioManager { get; set; }
     /// <summary>
     /// ≥ı ºªØ
     /// </summary>
     public void Init()
     {
         scoreText = GetComponentInChildren<TextMeshPro>();
+        Debug.Log(audioManager);    
     }
 
     public void Update()
@@ -30,6 +33,7 @@ public class CubeView : View
     private void OnMouseDown()
     {
         dispatcher.Dispatch(Demo1MediatorEvent.ClickDown);
+        audioManager.Play("Hit");
     }
 
     public void UpdateScore(int score)

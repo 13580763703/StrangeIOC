@@ -6,11 +6,13 @@ using UnityEngine;
 
 public class StartCommand : Command
 {
+    [Inject]
+    public AudioManager audioManager { get; set; }
     /// <summary>
     /// 当这个命令被执行的时候，默认会调用execute方法
     /// </summary>
     public override void Execute()
     {
-        Debug.Log("start command execute");
+        audioManager.Init();
     }
 }

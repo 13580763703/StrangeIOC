@@ -6,24 +6,31 @@ public class AudioManager
 {
 
     public Dictionary<string,AudioClip> audioClipDic = new Dictionary<string,AudioClip>();
+    public bool isMute = false;
+
     private static readonly string audioTextPathPrefix = Application.dataPath + "\\Framework\\Resources\\";
-    private static readonly string audioTextPathPostfix = "audiolist.txt";
+    private static readonly string audioTextPathMiddle = "audiolist";
+    private static readonly string audioTextPathPostfix = ".txt";
     public static string AudioTextPath
     {
         get
         {
-            return audioTextPathPrefix + audioTextPathPostfix;
+            return audioTextPathPrefix +audioTextPathMiddle+ audioTextPathPostfix;
         }
     }
-    public AudioManager()
+    //public AudioManager()
+    //{
+    //    LoadAudioClip();
+    //}
+    public void Init()
     {
-        
+        LoadAudioClip();
     }
 
     private void LoadAudioClip()
     {
         audioClipDic = new Dictionary<string, AudioClip>();
-        TextAsset ta = Resources.Load<TextAsset>(audioTextPathPostfix);
+        TextAsset ta = Resources.Load<TextAsset>(audioTextPathMiddle);
         string[] lines = ta.text.Split("\n");
         foreach(string line in lines)
         {
@@ -37,6 +44,7 @@ public class AudioManager
 
     public void Play(string name)
     {
+        if (isMute) return;
         AudioClip ac;
         audioClipDic.TryGetValue(name, out ac);
         if(ac != null)
@@ -47,6 +55,7 @@ public class AudioManager
 
     public void Play(string name,Vector3 position)
     {
+        if (isMute) return;
         AudioClip ac;
         audioClipDic.TryGetValue(name, out ac);
         if (ac != null)
