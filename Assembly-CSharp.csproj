@@ -98,7 +98,7 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\service\IExampleService.cs" />
     <Compile Include="Assets\Demo1\Scripts\View\Demo1MediatorEvent.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\MediationException.cs" />
-    <Compile Include="Assets\Framework\Scripts\GameObjectPool.cs" />
+    <Compile Include="Assets\Framework\Scripts\Pool\GameObjectPool.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\signal\CallWebServiceSignal.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\SequencerException.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\controller\StartCommand.cs" />
@@ -153,6 +153,7 @@
     <Compile Include="Assets\Demo1\Scripts\Service\IScoreService.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\GameRoot.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\ICommandBinder.cs" />
+    <Compile Include="Assets\DeactiveForTime.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjectionBinding.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\ContextView.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\MyFirstContext.cs" />
@@ -174,6 +175,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\api\ISequenceBinding.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\ShipMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\signal\ScoreChangedSignal.cs" />
+    <Compile Include="Assets\Framework\Scripts\Manager\PoolManager.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ContextEvent.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\ShipDestroyedCommand.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\model\ExampleModel.cs" />
@@ -236,7 +238,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\api\ITriggerable.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\view\ExampleMediator.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ContextExceptionType.cs" />
-    <Compile Include="Assets\Framework\Scripts\Manager\GameObjectPoolList.cs" />
+    <Compile Include="Assets\Framework\Scripts\Pool\GameObjectPoolList.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\IMediationBinder.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\IContextView.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\BinderExceptionType.cs" />
@@ -255,7 +257,6 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ClickDetector.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ICrossContextCapable.cs" />
-    <Compile Include="Assets\DeactiveForTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

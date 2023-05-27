@@ -14,5 +14,6 @@ public class StartCommand : Command
     public override void Execute()
     {
         audioManager.Init();
+        PoolManager.Instance.Init();
     }
 }

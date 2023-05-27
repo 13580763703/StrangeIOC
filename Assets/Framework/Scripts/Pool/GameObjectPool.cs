@@ -8,7 +8,7 @@ using UnityEngine;
 public class GameObjectPool
 {
     [SerializeField]
-    private string name;
+    public string name;
     [SerializeField]
     private GameObject prefab;
     [SerializeField]
@@ -16,4 +16,9 @@ public class GameObjectPool
 
     [NonSerialized]
     private List<GameObject> goList = new List<GameObject>();
+
+    public GameObject GetInst()
+    {
+        return null;
+    }
 }
