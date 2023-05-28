@@ -28,6 +28,10 @@ public class CubeView : View
     public void Update()
     {
         transform.Translate(new Vector3(Random.Range(-1, 2), Random.Range(-1, 2), Random.Range(-1, 2))*.1f);
+        if (Input.GetMouseButtonDown(0))
+        {
+            PoolManager.Instance.GetInst("Bullet");
+        }
     }
 
     private void OnMouseDown()

@@ -153,7 +153,7 @@
     <Compile Include="Assets\Demo1\Scripts\Service\IScoreService.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\GameRoot.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\ICommandBinder.cs" />
-    <Compile Include="Assets\DeactiveForTime.cs" />
+    <Compile Include="Assets\Demo1\Scripts\View\DeactiveForTime.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjectionBinding.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\ContextView.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\MyFirstContext.cs" />
@@ -261,11 +261,13 @@
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\7000汉字 符号 英文字符集.txt" />
     <None Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\ReadMe.txt" />
     <None Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Framework\Localization\Chinese.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\StrangeIoC\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
@@ -284,6 +286,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Framework\Localization\English.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
