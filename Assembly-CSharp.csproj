@@ -124,6 +124,7 @@
     <Compile Include="Assets\Demo1\Scripts\Command\UpdateScoreCommand.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\startupSequence\StartAppCommand.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\model\IExampleModel.cs" />
+    <Compile Include="Assets\Framework\Scripts\Manager\LocalizationText.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\ICrossContextInjectionBinder.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\ReadMe.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\api\ISequencer.cs" />
@@ -189,6 +190,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\pool\api\PoolInflationType.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\UpdateScoreCommand.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\CommandKeys.cs" />
+    <Compile Include="Assets\Framework\Scripts\Manager\LocalizationManager.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjectionBinder.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\CommandExceptionType.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\SignalsContext.cs" />
@@ -257,6 +259,7 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ClickDetector.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ICrossContextCapable.cs" />
+    <Compile Include="Assets\Framework\Scripts\FSM\FSMState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -267,7 +270,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\Framework\Localization\Chinese.txt" />
+    <None Include="Assets\Framework\Resources\Localization\Chinese.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\StrangeIoC\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
@@ -286,7 +289,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\Framework\Localization\English.txt" />
+    <None Include="Assets\Framework\Resources\Localization\English.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
