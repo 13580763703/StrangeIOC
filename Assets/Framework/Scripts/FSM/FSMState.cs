@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //有哪些状态转换的条件
-public enum Transtion
+public enum Transition
 {
-    NullTranstion = 0
+    NullTransition = 0
 }
 //状态ID,是每一个状态的唯一表示,一个状态有一个stateid,而且跟其他状态不可以重复
 public enum StateID
@@ -21,10 +21,10 @@ public abstract class FSMState
         get { return stateID; }
     }
 
-    protected Dictionary<Transtion,StateID> map = new Dictionary<Transtion, StateID> ();
-    public void AddTranstion(Transtion trans,StateID id)
+    protected Dictionary<Transition,StateID> map = new Dictionary<Transition, StateID> ();
+    public void AddTranstion(Transition trans,StateID id)
     {
-        if(Transtion.NullTranstion == trans || StateID.NullStateID == id)
+        if(Transition.NullTransition == trans || StateID.NullStateID == id)
         {
             Debug.LogError("Transtion or stateid is null");
             return;
@@ -36,7 +36,7 @@ public abstract class FSMState
         }
         map.Add(trans,id);
     }
-    public void DeleteTranstion(Transtion trans,StateID id)
+    public void DeleteTranstion(Transition trans,StateID id)
     {
         if(map.ContainsKey(trans) == false)
         {
@@ -45,7 +45,7 @@ public abstract class FSMState
         }
         map.Remove(trans);
     }
-    public StateID GetOutputState(Transtion trans)
+    public StateID GetOutputState(Transition trans)
     {
         if (map.ContainsKey(trans))
         {

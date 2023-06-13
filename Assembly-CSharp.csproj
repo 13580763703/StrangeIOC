@@ -200,6 +200,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\pool\api\IPool.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\model\ExampleModel.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\IView.cs" />
+    <Compile Include="Assets\Framework\Scripts\FSM\FSMState.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\main\MainRoot.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\api\ISequenceCommand.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileView.cs" />
@@ -259,7 +260,8 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ClickDetector.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ICrossContextCapable.cs" />
-    <Compile Include="Assets\Framework\Scripts\FSM\FSMState.cs" />
+    <Compile Include="Assets\Framework\Scripts\FSM\FSMSystem.cs" />
+    <Compile Include="Assets\Framework\Scripts\NPCAI\NPCControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
