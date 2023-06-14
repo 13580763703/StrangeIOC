@@ -5,12 +5,16 @@ using UnityEngine;
 //有哪些状态转换的条件
 public enum Transition
 {
-    NullTransition = 0
+    NullTransition = 0,
+    SawPlayer,//看到主角
+    LostPlayer//看不到主角
 }
 //状态ID,是每一个状态的唯一表示,一个状态有一个stateid,而且跟其他状态不可以重复
 public enum StateID
 {
-    NullStateID = 0
+    NullStateID = 0,
+    Patrol,//巡逻
+    Chase//追主角
 }
 
 public abstract class FSMState
@@ -56,4 +60,6 @@ public abstract class FSMState
 
     public virtual void DoBeforeEntering() { }
     public virtual void DoBeforeLeaving() { }
+
+    public abstract void DoUpdate();
 }

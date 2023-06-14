@@ -97,6 +97,7 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\ReplayGameCommand.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\service\IExampleService.cs" />
     <Compile Include="Assets\Demo1\Scripts\View\Demo1MediatorEvent.cs" />
+    <Compile Include="Assets\Framework\Scripts\FSM\FSMSystem.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\MediationException.cs" />
     <Compile Include="Assets\Framework\Scripts\Pool\GameObjectPool.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\signal\CallWebServiceSignal.cs" />
@@ -219,6 +220,7 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\controller\CallWebServiceCommand.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjector.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\MediationBinding.cs" />
+    <Compile Include="Assets\Framework\Scripts\NPCAI\NPCControl.cs" />
     <Compile Include="Assets\Demo1\Scripts\Command\StartCommand.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\EventView.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\ICommand.cs" />
@@ -260,8 +262,8 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ClickDetector.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ICrossContextCapable.cs" />
-    <Compile Include="Assets\Framework\Scripts\FSM\FSMSystem.cs" />
-    <Compile Include="Assets\Framework\Scripts\NPCAI\NPCControl.cs" />
+    <Compile Include="Assets\Framework\Scripts\NPCAI\ChaseState.cs" />
+    <Compile Include="Assets\Framework\Scripts\NPCAI\PatrolState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

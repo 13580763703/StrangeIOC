@@ -63,4 +63,20 @@ public class FSMSystem
         currentState.DoBeforeEntering();
 
     }
+
+    public void Start(StateID id)
+    {
+        FSMState state;
+        bool isGet = states.TryGetValue(id, out state);
+        if (isGet)
+        {
+            state.DoBeforeEntering();
+            currentState = state;
+        }
+        else
+        {
+            Debug.LogError("this state" + id + "is not exist in the fsm.");
+        }
+
+    }
 }
