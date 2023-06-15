@@ -6,9 +6,11 @@ public class NPCControl : MonoBehaviour
 {
     private FSMSystem fsm;
     public Transform[] waypoints;
+    private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         InitFSM();
     }
     /// <summary>
@@ -18,7 +20,7 @@ public class NPCControl : MonoBehaviour
     {
         fsm = new FSMSystem();
 
-        PatrolState patrolState = new PatrolState(waypoints,this.gameObject);
+        PatrolState patrolState = new PatrolState(waypoints,this.gameObject,player);
         patrolState.AddTranstion(Transition.SawPlayer, StateID.Chase);
 
         ChaseState chaseState = new ChaseState();

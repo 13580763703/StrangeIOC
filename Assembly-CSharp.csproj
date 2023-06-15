@@ -119,6 +119,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\SignalCommandBinder.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\api\ITriggerProvider.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\reflector\impl\ReflectionBinder.cs" />
+    <Compile Include="Assets\Framework\Scripts\NPCAI\ChaseState.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\EventCommand.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\signal\api\IBaseSignal.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\SequenceCommand.cs" />
@@ -160,6 +161,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\ContextView.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\MyFirstContext.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\CreateUserTileCommand.cs" />
+    <Compile Include="Assets\Framework\Scripts\NPCAI\PatrolState.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\ICommandBinding.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\signal\StartSignal.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\api\SequencerExceptionType.cs" />
@@ -262,8 +264,6 @@
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileMediator.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ClickDetector.cs" />
     <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ICrossContextCapable.cs" />
-    <Compile Include="Assets\Framework\Scripts\NPCAI\ChaseState.cs" />
-    <Compile Include="Assets\Framework\Scripts\NPCAI\PatrolState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -26,6 +26,7 @@ public abstract class FSMState
     }
 
     protected Dictionary<Transition,StateID> map = new Dictionary<Transition, StateID> ();
+     public FSMSystem fsm;
     public void AddTranstion(Transition trans,StateID id)
     {
         if(Transition.NullTransition == trans || StateID.NullStateID == id)

@@ -27,6 +27,7 @@ public class FSMSystem
       {
           Debug.LogError("this state" + state.ID + " what you want to add is exist!");return;
       }
+        state.fsm = this;
       states.Add(state.ID, state);
     }
     //´Ó×´Ì¬»úÀïÒÆ³ı×´Ì¬
