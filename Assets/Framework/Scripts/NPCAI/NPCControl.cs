@@ -23,7 +23,7 @@ public class NPCControl : MonoBehaviour
         PatrolState patrolState = new PatrolState(waypoints,this.gameObject,player);
         patrolState.AddTranstion(Transition.SawPlayer, StateID.Chase);
 
-        ChaseState chaseState = new ChaseState();
+        ChaseState chaseState = new ChaseState(this.gameObject,player);
         chaseState.AddTranstion(Transition.LostPlayer, StateID.Patrol);
 
         fsm.AddState(patrolState);

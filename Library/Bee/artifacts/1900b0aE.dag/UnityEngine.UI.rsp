@@ -123,6 +123,7 @@
 -define:PACKAGE_UITOOLKIT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Plugins/protobuf-net.dll"
 -r:"D:/unity project/StrangeIOC/Library/PackageCache/com.unity.collab-proxy@1.15.16/Lib/Editor/PlasticSCM/log4netPlastic.dll"
 -r:"D:/unity project/StrangeIOC/Library/PackageCache/com.unity.collab-proxy@1.15.16/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
 -r:"D:/unity project/StrangeIOC/Library/PackageCache/com.unity.collab-proxy@1.15.16/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
@@ -338,6 +339,7 @@
 -r:"D:/Unity/2021.3.2f1c1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"D:/Unity/2021.3.2f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 -r:"D:/Unity/2021.3.2f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-analyzer:"Assets/Plugins/protobuf-net.dll"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/AxisEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/BaseEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs"

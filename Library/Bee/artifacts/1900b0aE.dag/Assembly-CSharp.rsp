@@ -118,6 +118,7 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Plugins/protobuf-net.dll"
 -r:"D:/unity project/StrangeIOC/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"D:/unity project/StrangeIOC/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"D:/unity project/StrangeIOC/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
@@ -350,6 +351,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+-analyzer:"Assets/Plugins/protobuf-net.dll"
 "Assets/Demo1/Scripts/Command/Demo1CommandEvent.cs"
 "Assets/Demo1/Scripts/Command/RequestScoreCommand.cs"
 "Assets/Demo1/Scripts/Command/StartCommand.cs"
@@ -364,6 +366,8 @@
 "Assets/Demo1/Scripts/View/CubeView.cs"
 "Assets/Demo1/Scripts/View/DeactiveForTime.cs"
 "Assets/Demo1/Scripts/View/Demo1MediatorEvent.cs"
+"Assets/Demo2 protobuf/TestProtobuf.cs"
+"Assets/Demo2 protobuf/User.cs"
 "Assets/Framework/Scripts/FSM/FSMState.cs"
 "Assets/Framework/Scripts/FSM/FSMSystem.cs"
 "Assets/Framework/Scripts/Manager/AudioManager.cs"
